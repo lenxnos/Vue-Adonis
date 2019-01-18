@@ -5,12 +5,12 @@
   "parserOptions": {
     "ecmaVersion": 2017
   },
-  "extends": "airbnb-base",
+  
   "rules": {
     "strict": "off",
     "semi": ["error", "never"],
     "comma-dangle": ["error", "never"],
-    "space-before-function-paren": ["error", { "anonymous": "never", "named": "always" }],
+    "space-before-function-paren": "off",
     "class-methods-use-this": "off",
     "object-curly-newline": ["error", { "multiline": true }],
     "global-require": "off",

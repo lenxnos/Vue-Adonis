@@ -26,6 +26,6 @@ Route.group(() => {
 	Route.post('/auth/refresh', 'AuthController.refresh')
 	Route.post('/auth/forgot', 'AuthController.forgot')
 	Route.post('/auth/recover/:token', 'AuthController.recover')
-
+	Route.get('/countries','CountryController.index')
 
 }).prefix('api')

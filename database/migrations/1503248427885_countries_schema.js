@@ -5,8 +5,9 @@ const Schema = use('Schema')
 
 class CountriesSchema extends Schema {
   up () {
-    this.create('countries', (table) => {
+    this.create('countries', table => {
       table.increments()
+      table.string('name',90)
       table.string('iso2',2)
       table.string('iso3',3)
     })

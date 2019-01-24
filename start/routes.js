@@ -29,3 +29,6 @@ Route.group(() => {
 	Route.get('/countries','CountryController.index')
 
 }).prefix('api')
+
+
+Route.any('*', 'WebAppController.render')
